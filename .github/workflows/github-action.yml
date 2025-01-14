@@ -15,4 +15,4 @@ jobs:
         run: |
           docker build -t chandra227/uas-pcc-chandra-2025:latest -f Dockerfile .
           echo ${{ secrets.password }} | docker login -u ${{ secrets.username }} --password-stdin
-          docker push chandra227/uas-pcc-chandra227-2025:lates
+          docker push chandra227/uas-pcc-chandra227-2025:latest
