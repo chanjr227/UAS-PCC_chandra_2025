@@ -1,4 +1,4 @@
-name: GitHub Actions Build UAS-PCC-chandraa-2025
+name: GitHub Actions Build UAS-PCC-chandra-2025
 run-name: ${{ github.actor }} is Building Docker Image 🚀
 on: [push]
 jobs:
@@ -13,6 +13,6 @@ jobs:
 
       - name: login and build
         run: |
-          docker build -t chandra227/uas-pcc-chandra-2025:latest -f Dockerfile .
+          docker build -t chandra227/uas-pcc-chandra227-2025:latest -f Dockerfile .
           echo ${{ secrets.password }} | docker login -u ${{ secrets.username }} --password-stdin
           docker push chandra227/uas-pcc-chandra227-2025:latest
