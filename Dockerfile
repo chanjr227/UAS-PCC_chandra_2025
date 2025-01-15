@@ -11,12 +11,12 @@ RUN apk update && apk add --no-cache apache2
 RUN mkdir -p /var/www/localhost/htdocs
 
 # Menyalin isi folder UAS-PCC-CHANDRA saja
-COPY /WEB/assets /var/www/localhost/htdocs/
-COPY /WEB/images /var/www/localhost/htdocs/
-COPY /WEB/elements.html /var/www/localhost/htdocs/
-COPY /WEB/generic.html /var/www/localhost/htdocs/
-COPY /WEB/index.html /var/www/localhost/htdocs/
-COPY /WEB/landing.html /var/www/localhost/htdocs/
+COPY ./WEB/assets /var/www/localhost/htdocs/assets
+COPY ./WEB/images /var/www/localhost/htdocs/images
+COPY ./WEB/elements.html /var/www/localhost/htdocs/elements.html
+COPY ./WEB/generic.html /var/www/localhost/htdocs/generic.html
+COPY ./WEB/index.html /var/www/localhost/htdocs/index.html
+COPY ./WEB/landing.html /var/www/localhost/htdocs/landing.html
 
 
 # Menyediakan file teks sebagai demonstrasi
