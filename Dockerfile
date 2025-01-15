@@ -10,7 +10,7 @@ RUN apk update && apk add --no-cache apache2
 # Membuat direktori untuk website
 RUN mkdir -p /var/www/localhost/htdocs
 
-# Menyalin isi folder UAS-PCC-YANYAN-2025 saja (tanpa foldernya)
+# Menyalin isi folder UAS-PCC-CHANDRA saja
 COPY /WEB/assets /var/www/localhost/htdocs/
 COPY /WEB/images /var/www/localhost/htdocs/
 COPY /WEB/elements.html /var/www/localhost/htdocs/
@@ -20,8 +20,8 @@ COPY /WEB/landing.html /var/www/localhost/htdocs/
 
 
 # Menyediakan file teks sebagai demonstrasi
-RUN touch UAS-PCCM-YANYAN-2025.txt && \
-    echo "UAS" > UAS-PCC-YANYAN-2025.txt
+RUN touch UAS-PCCM-CHANDRA-2025.txt && \
+    echo "UAS" > UAS-PCC-CHANDRA-2025.txt
 
 # Expose port 80 untuk Apache
 EXPOSE 80
